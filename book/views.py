@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from .models import BooK
 
-# Create your views here.
+
+def book(request):
+    book_list = BooK.objects.all()
+    return render(request, "book.html", {"book_list": book_list})
