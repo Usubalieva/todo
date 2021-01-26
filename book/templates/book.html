@@ -7,7 +7,10 @@
     <title>Book</title>
 </head>
 <body>
-    <h2>Тестовая страница</h2>
+    
+    {% for book in book_list %}
+        <h3>{{ book.text }}</h3>
+    {% endfor %}
     
 </body>
 </html>
