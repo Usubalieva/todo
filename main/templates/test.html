@@ -45,7 +45,7 @@
                     <p>{{ todo.created_at }}</p>
                     <div class="action_buttons">
                         <img src="{% static './ICONS/unmarked.png' %}" />
-                        <img src="{% static './ICONS/delete.png' %}" />
+                        <a href="{% url 'delete-todo' todo.id %}"><img src="{% static './ICONS/delete.png' %}" /></a>
                     </div>
                 </div>
             </div>

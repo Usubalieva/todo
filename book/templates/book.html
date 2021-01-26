@@ -7,10 +7,25 @@
     <title>Book</title>
 </head>
 <body>
-    
+    <section>
+        <!-- <div class="create_container">
+            <form action="{% url 'add-todo' %}" method="POST">
+                {% csrf_token %}
+            <input 
+                class="create_input"
+                type="text"
+                placeholder="Напишите здесь новую книгу"
+                name="todo_text"
+             />
+            <button class="create_button">Добавить</button>
+            </form>
+        </div> -->
+
     {% for book in book_list %}
         <h3>{{ book.text }}</h3>
     {% endfor %}
+
+    
     
 </body>
 </html>
